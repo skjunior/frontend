@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Adobe</title>
+    <!-- Arquivo de reset, limpa as estilizações do navegador -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- Arquivo contendo as nossas estilizações -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Conteúdo Geral da Página -->
+    <!-- Display Flex para que os conteúdos fiquem distribuídos de forma fluida -->
+    <div class="flex center full bg-img">
+      <div class="flex content">
+        <!-- Elemento responsável por "conter" o logo -->
+        <div class="logo-wrapper">
+          <img src="./images/adobe_logo.svg" alt="Logo Adobe" />
+          Faça logon ou crie uma conta
+        </div>
+        <!-- Element responsável por "conter" o formulário -->
+        <div class="form-wrapper">
+          <!-- Display flex, para que o elemento ocupe o espaço disponível -->
+          <div class="flex">
+            <!-- MB = Margin Bottom (ou margem inferior) -->
+            <div class="mb-1">
+              <!-- .form-logo será usada para alterar a cor do SVG -->
+              <img
+                src="images/adobe_logo.svg"
+                class="form-logo"
+                alt="Logo Adobe"
+              />
+            </div>
+          </div>
+          <h1 class="form-title">Fazer logon</h1>
+          <form id="login-form">
+            <div class="form-email">
+              <p class="form-new-user">
+                Novo usuário?
+                <a href="#"> Crie uma conta </a>
+              </p>
+              <div class="form-group">
+                <label for="user-email">Endereço de email</label>
+                <input id="user-email" type="text" name="email">
+                <span class="form-validation"></span>
+              </div>
+            </div>
+            <div class="form-actions">
+              <a href="#">Fazer logon com chave de acesso</a>
+              <button class="btn btn-primary">Continuar</button>
+            </div>
+            <div class="form-sepparator">Ou</div>
+            <div class="social-login-wrapper">
+              <div class="social-login">
+                <img
+                  src="./images/Google__G__Logo.svg.webp"
+                  alt="Logo Google"
+                />
+                Continuar com o Google
+              </div>
+              <div class="social-login">
+                <img
+                  src="./images/f_logo_RGB-Blue_58.png"
+                  alt="Logo Facebook"
+                />
+                Continuar com o Facebook
+              </div>
+              <div class="social-login">
+                <img src="./images/apple.svg" alt="Logo Apple" />
+                Continuar com a Apple
+              </div>
+              <div class="sign-in-help">
+                <a href="#">Obtenha ajuda para fazer logon</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
